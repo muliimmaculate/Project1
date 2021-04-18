@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+body{
+  overflow-x: hidden;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  margin: 0rem;
+  padding: -1.6rem; 
+  text-align: right;
+  /* height: 9rem; */
+  flex-wrap: wrap;
+  min-height: 6rem;
+ 
+}
+
+a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 0.3rem;
+  padding: 1rem;
+  font-weight: 750;
+ 
+}
+a:hover{
+  background: linear-gradient(to right, #001FB4, #F08000, #F00000, #FF00A4);
+  border-radius: 1.2rem;
+ 
+}
+#logo{
+  background: #ff8177;
+  background-image: linear-gradient(to top,#ff0844, #ffb199);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -mo-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 2rem;
+  /* padding-top: 2rem; */
+}
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  background-image: url('./emma.jpg');
+  height: 30rem;
+  padding-top: 3rem;
+  background-size: cover;
+  background-position: center;
+
+}
+.hero-section h3{
+  background: linear-gradient(to right, #001FB4, #F08000, #F00000, #FF00A4);
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.hero-section button{
+  border: none;
+  text-align: center;
+  border-radius: 2rem;
+  color: white;
+  font-weight: bold;
+  padding: .8rem 4rem;
+  background: #FF7200;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none
+  
+}
+.hero-section button:hover{
+  background: linear-gradient(to right, #001FB4, #F08000, #F00000, #FF00A4);
+  cursor: pointer;
+}
+.container-section{
+   background: #FFFCFA;
+   text-align: center;
+
+}
+.container-section h3{
+  font-size: 2.9rem;
+  color: black;
+  margin: 1rem;
+  padding: 1rem;
+}
+.container-section input {
+  width: 11rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  outline: none;
+  max-width: 20rem;
+  background-image: linear-gradient(to top,#ff0844, #B317B1); 
+cursor: pointer;
+
+}
+::placeholder{
+  font-weight: 350;
+  font-size: 1rem;
+  color: white;
+ 
+}
+ .box{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  position: relative;
+  overflow: hidden;
+  background: #FFFCF9;
+  margin-left: .5rem;
+}
+.box img{
+  width: 90%;
+  height: 90%;
+  transition: transform 2s;
+}
+.box img:hover{
+  transform: scale(1.2);
+}
+.about h1{
+  font-size: 2rem;
+  text-align: center;
+}
+.about h4{
+  /* font-size: 2.5rem; */
+  font-size: 1.3rem;
+  color: #000000;
+  font-weight: 350;
+  font-family: monospace;
+  text-align: center;
+  padding: .5rem;
+}
+.about p{
+  margin: auto;
+  font-size: 1rem;
+  text-align: center;
+  background: linear-gradient(to right, #001FB4, #F08000, #F00000, #FF00A4);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 20rem;
+  flex-wrap: wrap;
+  border-radius: 2rem;
+  color: black;
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 600px;
+}
+form > label{
+  font-size: 1.5rem !important;
+  margin-left: .5rem;
+  margin-top: 1rem;
+}
+form > input{
+  min-width: 270px;
+  max-width: 500px;
+  padding: .8rem;
+  border: none;
+  border-radius: .2rem;
+  font-size: 18px;
+}
+form > textarea{
+  min-width: 270px;
+  max-width: 500px;
+  max-height: 200px;
+  border-radius: .2rem;
+  border: none;
+}
+.form-section{
+  background: #22223B;
+  color: white;
+  
+}
+.form-section h1{
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  
+}
+.form-section button{
+  margin: 1rem;
+  max-width: 15rem;
+  /* width: 5rem;
+  height: 2rem; */
+  padding: .5rem 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+  background: #FF9402;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.form-section button:hover{
+  background-color: rgb(240, 140, 0);
+  color: #F00000;
+}
+.form-section h2{
+  text-align: center;
+  font-size: 1.3rem;
+  padding: .5rem; 
+}
+
+.form-section > p{
+  color: rgb(223, 223, 223);
+  /* margin-left: 1.5rem; */
+  padding: .2rem; 
+  line-height: 2rem;
+  text-align: center;
+}
+
+.form-section > h3{
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #B317B1;
+}
