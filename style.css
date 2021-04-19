@@ -13,7 +13,7 @@ nav{
   justify-content: space-between;
   background: black;
   margin: 0rem;
-  padding: -1.6rem; 
+  padding: -1.8rem; 
   text-align: right;
   /* height: 9rem; */
   flex-wrap: wrap;
@@ -33,9 +33,10 @@ a{
 }
 a:hover{
   background: linear-gradient(to right, #001FB4, #F08000, #F00000, #FF00A4);
-  border-radius: 1.2rem;
+  border-radius: 2rem;
  
 }
+ 
 #logo{
   background: #ff8177;
   background-image: linear-gradient(to top,#ff0844, #ffb199);
@@ -59,39 +60,64 @@ a:hover{
   font-size: 1rem;
   color: white;
   text-align: center;
-  background-image: url('./emma.jpg');
+  background-image: url('./images/image.jpg');
   height: 30rem;
   padding-top: 3rem;
   background-size: cover;
   background-position: center;
 
 }
+.hero-section h2{
+  font-size: 3rem;
+  color: red;
+  text-align: center;
+}
+.hero-section h2 span{
+  color: #FF910C;
+}
 .hero-section h3{
   background: linear-gradient(to right, #001FB4, #F08000, #F00000, #FF00A4);
   border-radius: 2rem;
   padding: 1rem;
   text-align: center;
+  margin-top: -200px;
 }
-.hero-section button{
+.container-section p{
+  font-size: 2rem;
+  color: #0C2DFF;
+  font-weight: lighter;
+}
+.slider{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px; 
+  max-width: 500px;
+  margin: auto;
+  margin-top: -5.1rem;
+}
+.slider > img{
+  max-width: 600px;
+  min-width: 240px;
+}
+.slider button{
+  background-color: #F08000;
+  width: 100%;
+  padding: .5rem;
   border: none;
-  text-align: center;
-  border-radius: 2rem;
-  color: white;
-  font-weight: bold;
-  padding: .8rem 4rem;
-  background: #FF7200;
-  font-size: 1.5rem;
+  color: #FFFCFA;
+  font-size: 2rem;
   cursor: pointer;
-  border: none
-  
 }
-.hero-section button:hover{
-  background: linear-gradient(to right, #001FB4, #F08000, #F00000, #FF00A4);
-  cursor: pointer;
+
+#right{
+  margin-top: -.3rem;
 }
 .container-section{
-   background: #FFFCFA;
-   text-align: center;
+  margin-top: -6.5rem;
+  background: #FFFCFA;
+  text-align: center;
 
 }
 .container-section h3{
@@ -109,7 +135,7 @@ a:hover{
   outline: none;
   max-width: 20rem;
   background-image: linear-gradient(to top,#ff0844, #B317B1); 
-cursor: pointer;
+  cursor: pointer;
 
 }
 ::placeholder{
@@ -123,6 +149,7 @@ cursor: pointer;
   grid-template-columns: 2fr 2fr;
   position: relative;
   overflow: hidden;
+  margin: auto;
   background: #FFFCF9;
   margin-left: .5rem;
 }
